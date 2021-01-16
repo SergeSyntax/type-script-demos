@@ -1,5 +1,17 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { EventComponent } from './events/EventComponent';
+import Parent from './props/Parent';
+import GuestList from './state/GuestList';
+import UserSearch from './state/UserSearch';
 
-ReactDOM.render(<App />, document.getElementById("root"));
+function App() {
+  return (
+    <div>
+      {/* <UserSearch /> */}
+      <EventComponent />
+    </div>
+  );
+}
+
+ReactDOM.render(<App />, document.querySelector('#root'));
